@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @recuriement.first_name %>
+    <%= @recuriement.last_name %>
+  </h1>
+  <p class="lead">
+    <%= @recuriement.email %> |
+    <%= @recuriement.phone %>
+  </p>
+  <hr class="my-4">
+  <%= link_to "Edit", edit_recuriement_path(@recuriement), class:"btn btn-info" %> 
+
+  <%= link_to "Back", recuriements_path, class:"btn btn-info" %>
+  <br></br>
+  <%= button_to "Destroy this recuriement", @recuriement, method: :delete, class:"btn btn-danger" %>
+</div>
